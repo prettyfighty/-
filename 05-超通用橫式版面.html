@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超通用橫式版面 - 金魚都能懂的這個網頁畫面怎麼切</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            /* height: 100vh; */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(-30deg, #feaecb, #e7597f, #fe8556) fixed;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 568px;
+            margin: 15px;
+            display: flex;
+            background-color: rgba(255, 255, 255, .7);
+            border: 1px solid #888;
+            box-shadow: 0px 10px 30px  rgba(160, 0, 0, .5);
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .item .pic {
+            width: 50%;
+        }
+
+        .item .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item .txt {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item .txt h2 {
+            margin-bottom: 0.4em;
+            font-weight: 500;
+        }
+
+        .item .txt p {
+            font-weight: 300;
+        }
+
+        .item .txt .btn {
+            line-height: 1.5em;
+            border: 1px solid #ccc;
+            padding: 0 1em;
+            /* align-self: flex-end; */
+            text-decoration: none;
+            border-radius: 200px;
+            margin-top: auto;
+            margin-left: auto;
+            color: #aaa;
+        }
+
+        .item .txt .btn:hover {
+            background-color: #ccc;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=10">
+                </div>
+                <div class="txt">
+                    <h2>金昭容</h2>
+                    <p>為了家族、也為了不讓生下她後去世的母親白白死去，也為了對父親盡孝，將「被揀擇成為中殿」視為存在的理由，竭盡全力的生活。</p>
+                    <a href="" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=20">
+                </div>
+                <div class="txt">
+                    <h2>徐知安</h2>
+                    <p>28歲，雙胞胎姐姐，海成集團行銷部派遣2年約職員，海成集團海成服飾行銷部正式職員。性格豁達開朗、積極樂觀，原先夢想是「成為大企業內的正式職員」。</p>
+                    <a href="" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=30">
+                </div>
+                <div class="txt">
+                    <h2>禹書莉</h2>
+                    <p>前程似錦的小提琴演奏者，卻在17歲的花樣年華，出了一場車禍意外，此後陷入長達13年的昏迷。某一日因清潔人員的手錶反光照射刺激，在眾人的詫異中奇蹟般的甦醒了。</p>
+                    <a href="" class="btn">more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

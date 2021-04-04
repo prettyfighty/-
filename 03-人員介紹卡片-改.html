@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金魚都懂的這個畫面怎麼切：製作一個人員介紹卡片</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        html,
+        body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            background-color: #003;
+            align-items: center;
+        }
+        .wrap {
+            width: 1200px;
+            display: flex;
+            margin: auto;
+        }
+        .item {
+            width: 368px;
+            margin: 15px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transform: translateY(0px);
+            transition: transform .5s, background 0s, box-shadow .5s;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+            vertical-align: middle;
+        }
+        .item h2 {
+            border-bottom: 1px solid #888;
+            width: 80%;
+            margin: auto;
+            padding: 20px 20px 0.3em;
+            margin-bottom: .4em;
+            font-weight: 900;
+            transition: .25s;
+        }
+        .item p {
+            padding: 0 20px 20px;
+            line-height: 1.5;
+            text-align: justify;
+            font-weight: 300;
+            transition: .25s;
+        }
+        .item .txt{
+            position: relative;
+        }
+        .item .txt::before{
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-top: 50px solid transparent;
+            border-left: 184px solid #fff;
+            border-right: 184px solid #fff;
+            transform: translateY(-100%);
+        }
+        .item:hover {
+            background: linear-gradient(0deg, #fb8076 0%, #feb85d 35%);
+            transform: translateY(-30px);
+            box-shadow: -1px 30px  rgb(180, 68, 58, .5);
+            border-bottom: none;
+        }
+        .item:hover .txt::before {
+            border-left: 184px solid #feb85d;
+            border-right: 184px solid #feb85d;
+        }
+        .item:hover h2 {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+        .item:hover p {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/300/300/?random=10">
+            <div class="txt"></div>
+            <h2>金昭容</h2>
+            <p>為了家族、也為了不讓生下她後去世的母親白白死去，也為了對父親盡孝，將「被揀擇成為中殿」視為存在的理由，竭盡全力的生活。但進宮後發現哲宗身邊已經有花真了，自己什麼也做不了。能夠敞開心扉的只有崔尚宮和洪燕而已，因此性格變得孤僻，成為了後宮們口中的「別宮魔女」。</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300/?random=20">
+            <div class="txt"></div>
+            <h2>徐知安</h2>
+            <p> 28歲，雙胞胎姐姐，海成集團行銷部派遣2年約職員，海成集團海成服飾行銷部正式職員。恩東高中木工組，原先想念以藝術聞名的弘益大學，但因父親經商失敗、妹妹反對而改念普通大學（孝林大學）經營管理系。性格豁達開朗、積極樂觀，原先夢想是「成為大企業內的正式職員」。</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300/?random=30">
+            <div class="txt"></div>
+            <h2>禹書莉</h2>
+            <p>前程似錦的小提琴演奏者，卻在17歲的花樣年華，出了一場車禍意外，此後陷入長達13年的昏迷。某一日因清潔人員的手錶反光照射刺激，在眾人的詫異中奇蹟般的甦醒了。醒過來的她，看著鏡子中有著清晰皺紋的陌生女人，卻驚慌的問自己：「這位大媽是誰？」</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

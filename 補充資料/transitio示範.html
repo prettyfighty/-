@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>transition演示2</title>
+    <style type="text/css">
+        body {
+            color: #fff;
+            background: #000;
+        }
+
+        .change {
+            display: block;
+            width: 400px;
+            height: 400px;
+            background: url(http://p3.qhimg.com/t0134c65e59012a1257.png) no-repeat center;
+            background-size: cover;
+            border: 1em solid rgba(255, 255, 255, .8);
+            margin: 50px auto;
+        }
+
+        .change img {
+            display: block;
+            width: 300px;
+            height: 284px;
+            opacity: 0;
+            -webkit-transform: translate(-100px, -100px);
+            transform: translate(-100px, -100px);
+            -webkit-transition: opacity 1s ease-in-out 0.5s, -webkit-transform 1s ease-in-out;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        .change:hover img {
+            -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+
+
+
+
+
+        .animated_div {
+            margin: 100px auto;
+            width: 100px;
+            height: 60px;
+            background: #92B901;
+            /*簡寫屬性*/
+            -webkit-transition: -webkit-transform 1s, opacity 1s, background 1s, width 1s, height 1s, font-size 1s;
+            /* Safari */
+            /*每個屬性分開寫*/
+            transition-property: width, height, transform, background, opacity;
+            transition-duration: 2s, 2s, 2s, 2s, 2s, 2s;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            opacity: 0.4;
+        }
+
+        .animated_div:hover {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+            opacity: 1;
+            background: #1ec7e6;
+            width: 200px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="http://image.haosou.com/i?q=%E5%AB%A6%E5%A8%A5png&;src=tab_www" class="change " target="_blank">
+        <img src="http://p4.qhimg.com/t0160e6a92121691e22.png" alt="" />
+    </a>
+
+    <div class="animated_div"></div>
+</body>
+
+</html>

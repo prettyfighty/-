@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            padding: 100px 0;
+            background: linear-gradient(20deg, #3d5493, #1aa2a0) fixed center center / 100% 100%;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+        .item h2{
+            font-weight: 900;
+        }
+        .item p{
+            font-weight: 300;
+        }
+        .item .pic {    
+            width: 55%;
+            flex-shrink: 0;
+        }
+
+        .item .pic img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .item .txt {
+            width: 55%;
+            flex-shrink: 0;
+            padding: 50px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+
+        .item > :first-child {
+            margin-right: -10%;
+        }
+
+        .item:nth-child(1) .txt {
+            background-color: rgba(240, 174, 193, .7);
+        }
+
+        .item:nth-child(2) .txt {
+            background-color: rgba(42, 253, 208, .7);
+        }
+
+        .item:nth-child(3) .txt {
+            background-color: rgba(254, 201, 121, .7);
+        }
+
+        .item:nth-child(4) .txt {
+            background-color: rgba(149, 219, 214, .7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=10">
+            </div>
+            <div class="txt">
+                <h2>哲仁王后</h2>
+                <p>為韓國tvN於2020年12月12日起播出的週末連續劇，改編自中國大陸網劇《太子妃升職記》，由《花郎》尹成植導演與《監獄醫生》朴繼玉編劇合作拍攝。本劇講述生活在自由的現代大韓民國的男人－青瓦台的廚師張奉煥的靈魂穿越到朝鮮王朝時代王宮內哲宗（金正賢飾）的王妃金昭容（申惠善飾）體內後所展開的故事。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="txt">
+                <h2>死之詠贊</h2>
+                <p>為韓國SBS於2018年11月27日播出的月火連續劇。由《當你沉睡時》朴秀真導演執導及曹秀真編劇合作打造，此劇講述朝鮮最早的公費留學生尹心悳（申惠善飾）和她的戀人、天才劇作家金佑鎭（李鍾碩飾）在玄海灘殉情的故事。Netflix將於12月14日起全球首播。</p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=20">
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=30">
+            </div>
+            <div class="txt">
+                <h2>我的黃金光輝人生</h2>
+                <p>為韓國KBS 2TV於2017年9月2日起播出的週末連續劇，由《Oh My Venus》的金亨碩導演與《第二個二十歲》的蘇賢京作家合作打造。此劇講述陰錯陽差成為富人的女人徐知安（申惠善 飾），跌入人生低谷時，從中領悟幸福的故事。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="txt">
+                <h2>雖然30但仍17</h2>
+                <p>為韓國SBS於2018年7月23日起每逢週一、週二晚間10時播出的月火連續劇，由申惠善及梁世宗主演。此劇講述年齡和肉體30歲、但是精神還停留在17歲的禹書莉（申惠善 飾），與誤以為自己害死了禹書莉的封閉孔宇振（梁世宗 飾），兩人相遇後發生的療癒故事。</p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=40">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
